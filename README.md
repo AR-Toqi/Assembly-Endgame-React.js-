@@ -1,16 +1,71 @@
-# React + Vite
+# Assembly: Endgame 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Assembly: Endgame** is a modern, interactive word-guessing game built with React. The goal is to guess the hidden word within 8 attempts. Every wrong guess costs a programming language its "life." Save the programming world from the clutches of Assembly!
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+Check out the live game here: [Assembly: Endgame - Live](https://assembly-endgame-by-ar-toqi.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **Interactive Gameplay**: Use the on-screen keyboard to guess letters.
+- **Visual Feedback**:
+  - Programming language "chips" represent your lives.
+  - Languages turn into "ghosts" (💀) when you make wrong guesses.
+  - Unique farewell messages for each lost language.
+- **Win/Loss States**:
+  - **Victory**: Celebratory confetti and a "You Win!" message.
+  - **Defeat**: A "Game Over" message encouraging you to learn Assembly!
+- **Modern Architecture**: Clean, component-based structure for better maintainability.
+- **Accessibility**: Semantic HTML and ARIA roles for screen reader support.
+- **Responsive Design**: Works smoothly across different screen sizes.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Vanilla CSS with a modular component-based approach.
+- **Libraries**:
+  - `clsx`: For dynamic class name management.
+  - `react-confetti`: For the victory celebration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+The project follows a clean and organized folder structure:
+```text
+src/
+├── components/         # Modular UI components (Header, Status, Keyboard, etc.)
+├── data/               # Static datasets (Languages, Word list)
+├── utils/              # Helper functions (Random word generator, Farewell text)
+├── App.jsx             # Main logic and state management
+├── App.css             # Global layout styles
+└── index.css           # CSS resets and variables
+```
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js installed on your machine.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/assembly-endgame.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd assembly-endgame
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+To start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+Developed with ❤️ by **AR Toqi**

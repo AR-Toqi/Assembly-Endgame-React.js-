@@ -1,0 +1,32 @@
+section.language-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 36px;
+}
+
+span.chip {
+    border-radius: 3px;
+    padding: 4.5px;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+span.chip.lost::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+}
